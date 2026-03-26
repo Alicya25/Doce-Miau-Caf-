@@ -1,0 +1,28 @@
+.cafe-header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color:#C08552;
+    border-bottom: 1px solid #d29763;
+}
+nav{
+     display: flex;
+     gap: 50px;
+     font-size: larger;
+     font-family: Arial, Helvetica, sans-serif;
+     cursor: pointer;
+}
+.nav-item.active {
+    border-bottom: 2px solid #FFF8F0;
+    font-weight: bold;
+    color: #FFF8F0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-item:hover {
+    scale: 1.1;
+}
+
+
