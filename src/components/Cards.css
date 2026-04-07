@@ -1,0 +1,38 @@
+.cafe-card {
+     background: #f3ede7;
+     border-radius: 20px;
+     width: 290px;
+     height: 250px;
+     text-align: center;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     padding: 60px 20px 20px;
+     text-align: center;
+     position: relative;
+     top: 50px;
+}
+
+.cafe-grid {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     flex-wrap: wrap;
+     padding: 40px;
+}
+
+.cafe-gatos {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -60px; /* faz ela subir */
+  left: 50%;
+  transform: translateX(-50%);
+}
+h4{
+
+}
+p{
+     position: relative;
+     top: 150px;
+}
