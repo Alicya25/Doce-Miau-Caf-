@@ -5,9 +5,11 @@ export function Card({title, category, imagem}){
           <div className="cafe-card">
                <img className="cafe-gatos" src={imagem} alt={title}  />
                <div className="card-info">
-                    <h4>{title}</h4>
+                    <div className="nome-pet">
+                         <h3>{title}</h3>
+                    </div>
                     <p>{category}</p>
-                    <button className="play-btn"></button>
+                    <button className="play-btn">Conhecer</button>
                </div>
           </div>
      )

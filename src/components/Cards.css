@@ -1,7 +1,7 @@
 .cafe-card {
-     background: #f3ede7;
+     background: #FFFFFF;
      border-radius: 20px;
-     width: 290px;
+     width: 200px;
      height: 250px;
      text-align: center;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -14,7 +14,7 @@
 .cafe-grid {
      display: flex;
      justify-content: center;
-     gap: 30px;
+     gap: 90px;
      flex-wrap: wrap;
      padding: 40px;
 }
@@ -28,11 +28,15 @@
   top: -60px; /* faz ela subir */
   left: 50%;
   transform: translateX(-50%);
+  border: 6px solid #FFFFFF;
 }
-h4{
+.play-btn {
+  margin-top: 140px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #7B4F2C;
+  color: white;
+  cursor: pointer;
+}
 
-}
-p{
-     position: relative;
-     top: 150px;
-}

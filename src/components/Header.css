@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    background-color:#C08552;
+    background-color:#7B4F2C;
     border-bottom: 1px solid #d29763;
 }
 nav{
@@ -13,6 +13,7 @@ nav{
      font-size: larger;
      font-family: Arial, Helvetica, sans-serif;
      cursor: pointer;
+     color: #FFFFFF;
 }
 .nav-item.active {
     border-bottom: 2px solid #FFF8F0;
@@ -23,6 +24,17 @@ nav{
 }
 .nav-item:hover {
     scale: 1.1;
+}
+.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    right: 420px;
+    color: #FFFFFF;
+}
+.logo-img{
+    width: 80px;
+    position: relative;
+    right: 30px;
 }
 
 
