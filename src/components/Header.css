@@ -10,10 +10,11 @@
 nav{
      display: flex;
      gap: 50px;
-     font-size: larger;
-     font-family: Arial, Helvetica, sans-serif;
      cursor: pointer;
      color: #FFFFFF;
+     font-family: "Poppins", sans-serif;
+     font-weight: 500;
+     
 }
 .nav-item.active {
     border-bottom: 2px solid #FFF8F0;
@@ -28,13 +29,16 @@ nav{
 .logo{
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    right: 420px;
+    right: 485px;
     color: #FFFFFF;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .logo-img{
-    width: 80px;
+    width: 60px;
     position: relative;
-    right: 30px;
+    left: 50%;
 }
 
 

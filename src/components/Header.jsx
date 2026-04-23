@@ -1,9 +1,9 @@
 import "./Header.css";
-// import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.png";
 export function Header({activeTab, setActiveTab}){
     return(
         <aside className="cafe-header">
-             {/* <img className="logo-img" src={Logo} alt="café" /> */}
+             <img className="logo-img" src={Logo} alt="café" /> 
             <h2 className="logo">Doce Miau Café</h2>
 
             <nav>
