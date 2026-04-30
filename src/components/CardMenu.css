@@ -1,0 +1,44 @@
+.cafe-menu-principal {
+     background: #FFFFFF;
+     border-radius: 20px;
+     width: 225px;
+     padding: 15px;
+     text-align: center;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+     margin: 30px;
+}
+
+.cafe-Menu-img {
+     width: 100%;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 15px;
+}
+
+.Menu-info {
+     margin-top: 10px;
+}
+
+.comidas h3 {
+     transform: translateY(-25px);
+     font-size: large;
+     font-family: "Poppins", serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+     color: #4A2E1F;
+}
+
+.Menu-info p {
+     font-weight: bold;
+     transform: translateY(-20px);
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: large;
+     color: #4A2E1F;
+}

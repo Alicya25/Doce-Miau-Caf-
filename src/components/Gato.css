@@ -1,21 +1,20 @@
 .titulo {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: x-large;
-     margin: 0px;
-     font-family: "Gabarito", sans-serif;
-     font-optical-sizing: auto;
-     font-weight: 500;
-     font-style: normal;
-     color: #4A2E1F;
-     position: relative;
-     top: -170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-family: "Gabarito", sans-serif;
+  color: #4A2E1F;
+  
+}
+
+#titulo-gatos{
+     /* position: relative; */
+     bottom: 550px;
 }
 
 p {
-     position: relative;
-     top: 100px;
+     transform: translateY(+90px);
      font-family: "Poppins", sans-serif;
      font-weight: 400;
      font-style: normal;
@@ -24,8 +23,7 @@ p {
 }
 
 .nome-pet {
-     position: relative;
-     top: 95px;
+     transform: translateY(+80px);
      font-size: x-large;
      font-family: "Playfair Display", serif;
      font-optical-sizing: auto;
@@ -34,14 +32,7 @@ p {
      color: #4A2E1F;
 }
 
-.pata-esquerda {
-     width: 500px;
-     position: relative;
-     left: 120px;
-}
-
-.pata-direita {
-     width: 500px;
-     position: relative;
-     right: 120px;
+#pata{
+     width: 300px;
+   
 }

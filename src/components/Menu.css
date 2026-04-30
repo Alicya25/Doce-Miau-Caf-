@@ -1,0 +1,18 @@
+.titulo-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-family: "Gabarito", sans-serif;
+  color: #4A2E1F;
+}
+#titulo-menu{
+     /* position: relative; */
+     bottom: 550px;
+}
+.menu-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); 
+  gap: -5px;
+  margin-bottom: 30px;
+}

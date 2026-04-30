@@ -1,5 +1,5 @@
 import "./Header.css";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/detalhes-logo/logo.png";
 export function Header({activeTab, setActiveTab}){
     return(
         <aside className="cafe-header">

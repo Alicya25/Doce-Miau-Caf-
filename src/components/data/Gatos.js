@@ -1,11 +1,11 @@
-import mochi from "../../assets/mochi.jpg";
-import luna from "../../assets/luna.jpg";
-import nino from "../../assets/nino.jpg";
-import trix from "../../assets/trix.jpg";
-import branca from "../../assets/branca.jpg";
-import eclipse from "../../assets/eclipse.jpg";
-import sirius from "../../assets/sirius.jpg";
-import safira from "../../assets/safira.jpg";
+import mochi from "../../assets/gatos/mochi.jpg";
+import luna from "../../assets/gatos/luna.jpg";
+import nino from "../../assets/gatos/nino.jpg";
+import trix from "../../assets/gatos/trix.jpg";
+import branca from "../../assets/gatos/branca.jpg";
+import eclipse from "../../assets/gatos/eclipse.jpg";
+import sirius from "../../assets/gatos/sirius.jpg";
+import safira from "../../assets/gatos/safira.jpg";
 
 export const gData = [
     { id: 1, title: "Mochi", category: "Carinhoso, ama colo e dorme muito.", imagem: mochi }, // criar objeto usando chaves{}
