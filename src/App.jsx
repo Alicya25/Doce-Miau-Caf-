@@ -3,11 +3,16 @@ import { useState } from "react";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { Gato } from "./components/Gato";
-import { Menu } from "./components/Menu"
+import { Menu } from "./components/Menu";
+
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [Carrinho, setCarrinho]=useState([]);
+
+  // const filteredGames = gMenu
+  // .filter ((game) => activeTab === "dash" || favorites.includes(game.id)) 
+  
 
   const toggleCarrinho = (id)=>{ //atualiza o state de acordo com o valor
     setFavorites((prev)=> prev.includes(id) ? prev.filter((favId) => favId !== id ) : [...prev, id]); //prev é o valor anterior, ele vai pegar o valor anterior + o atual
@@ -41,6 +46,7 @@ function App() {
 
       <div className="cafe-content">
       </div>
+      
     </div>
   );
 }

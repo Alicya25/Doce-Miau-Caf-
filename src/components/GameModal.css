@@ -1,0 +1,134 @@
+/* Fundo escuro com blur */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+/* Caixa do modal */
+.modal-content {
+  background: #ffffff;
+
+  min-height: 420px;
+  width: 520px;
+  max-width: 92%;
+
+  border-radius: 30px;
+  padding: 45px 40px;
+
+  position: relative;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+
+  animation: pop 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* animação suave */
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* botão fechar */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: #7a4b2a;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* imagem do gato */
+.modal-banner {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  display: block;
+  margin: 0 auto 15px auto;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* corpo do modal */
+.modal-body {
+  text-align: center;
+  padding: 10px 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* categoria */
+.modal-category {
+  display: inline-block;
+  font-size: 13px;
+  color: #7a4b2a;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* título */
+.modal-body h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #3b2a1d;
+  font-weight: bold;
+}
+
+/* descrição */
+.description {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #333;
+
+  text-align: center;
+  max-width: 420px;
+
+  transform: translateY(-4px);
+
+  text-align: justify;
+  text-indent: 15px;
+  letter-spacing: 0.2px;
+  word-spacing: 1px;
+}

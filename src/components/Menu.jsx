@@ -35,8 +35,7 @@ export function Menu() {
           <CardMenu key={g.id} {...g} />
         ))}
       </div>
-
-      {/* ☕ BEBIDAS */}
+  {/* bebidas */}
       <h3 className="categoria-titulo">Bebidas Quentes</h3>
       <div className="menu-row">
         {bebidaQ.map((g) => (
