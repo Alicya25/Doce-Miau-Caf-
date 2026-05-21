@@ -16,3 +16,10 @@
   gap: -5px;
   margin-bottom: 30px;
 }
+.categoria-titulo{
+  position: absolute;
+  left: 20px;
+  font-family: "Gabarito", sans-serif;
+  color: #4A2E1F;
+  font-size: x-large;
+}
