@@ -12,7 +12,6 @@ export function Home() {
          <p className="subtitulo">
           Cafés especiais, doces artesanais e a companhia mais fofa que você vai encontrar. 
         </p>
-        
         <button className="botao">Ver Menu</button>
       </div>
 

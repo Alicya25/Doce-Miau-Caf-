@@ -7,7 +7,7 @@ import detalhe2 from "../assets/detalhes-logo/7.png";
 import { SwiperSlide } from "swiper/react";
 import Slider from "./Slider.jsx";
 
-export function Menu() {
+export function Menu({ carrinho, toggleCarrinho }) {
 
   const doces = gMenu.filter(item => item.tipo === "doce");
   const salgados = gMenu.filter(item => item.tipo === "salgado");
@@ -20,6 +20,7 @@ export function Menu() {
   };
 
   return (
+
     <div className="principal-menu">
 
       <div className="titulo-menu">
@@ -28,46 +29,76 @@ export function Menu() {
         <img id="pata" src={detalhe2} alt="café" />
       </div>
 
-      {/* DOCES */}
       <h3 className="categoria-titulo">Pratos doces</h3>
 
       <Slider settings={sliderSettings}>
+
         {doces.map((g) => (
+
           <SwiperSlide key={g.id}>
-            <CardMenu {...g} />
+
+            <CardMenu
+              {...g}
+              isCarrinho={
+                carrinho.some(item => item.id === g.id)
+              }
+              onCarrinho={() => toggleCarrinho(g)}
+            />
+
           </SwiperSlide>
+
         ))}
+
       </Slider>
 
-      {/* SALGADOS */}
       <h3 className="categoria-titulo">Salgados</h3>
 
       <Slider settings={sliderSettings}>
+
         {salgados.map((g) => (
+
           <SwiperSlide key={g.id}>
-            <CardMenu {...g} />
+
+            <CardMenu
+              {...g}
+              isCarrinho={
+                carrinho.some(item => item.id === g.id)
+              }
+              onCarrinho={() => toggleCarrinho(g)}
+            />
+
           </SwiperSlide>
         ))}
       </Slider>
 
-      {/* BEBIDAS QUENTES */}
-      <h3 className="categoria-titulo">Bebidas Quentes</h3>
+    <h3 className="categoria-titulo">Bebidas Quentes</h3>
 
       <Slider settings={sliderSettings}>
         {bebidaQ.map((g) => (
           <SwiperSlide key={g.id}>
-            <CardMenu {...g} />
+            <CardMenu
+              {...g}
+              isCarrinho={
+                carrinho.some(item => item.id === g.id)
+              }
+              onCarrinho={() => toggleCarrinho(g)}
+            />
           </SwiperSlide>
         ))}
       </Slider>
-
-      {/* BEBIDAS GELADAS */}
+      
       <h3 className="categoria-titulo">Bebidas Geladas</h3>
 
       <Slider settings={sliderSettings}>
         {bebidaG.map((g) => (
           <SwiperSlide key={g.id}>
-            <CardMenu {...g} />
+            <CardMenu
+              {...g}
+              isCarrinho={
+                carrinho.some(item => item.id === g.id)
+              }
+              onCarrinho={() => toggleCarrinho(g)}
+            />
           </SwiperSlide>
         ))}
       </Slider>

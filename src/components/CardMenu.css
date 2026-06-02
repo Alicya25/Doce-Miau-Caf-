@@ -1,44 +1,95 @@
 .cafe-menu-principal {
-     background: #FFFFFF;
-     border-radius: 20px;
-     width: 225px;
-     padding: 15px;
-     text-align: center;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-     display: flex;
-     flex-wrap: wrap;
-     gap: 20px;
-     justify-content: center;
-     margin: 30px;
+    position: relative;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+
+    width: 225px;
+    padding: 15px;
+    margin: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cafe-Menu-img {
-     width: 100%;
-     height: 250px;
-     object-fit: cover;
-     border-radius: 15px;
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    display: block;
 }
 
 .Menu-info {
-     margin-top: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.comidas {
+    min-height: 55px;
 }
 
 .comidas h3 {
-     transform: translateY(-25px);
-     font-size: large;
-     font-family: "Poppins", serif;
-     font-optical-sizing: auto;
-     font-weight: weight;
-     font-style: normal;
-     color: #4A2E1F;
+    font-size: large;
+
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    color: #4A2E1F;
+
+    margin-top: 10px;
 }
 
 .Menu-info p {
-     font-weight: bold;
-     transform: translateY(-20px);
-     font-family: "Poppins", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-     font-size: large;
-     color: #4A2E1F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: large;
+
+    color: #4A2E1F;
+
+    margin-top: 5px;
+}
+
+.favorite-btn {
+    position: absolute;
+
+    bottom: -18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #8B5E3C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.favorite-btn:hover {
+    transform: translateX(-50%) scale(1.08);
+}
+
+.favorite-btn.active {
+    background: #f3f2f5;
 }

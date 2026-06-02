@@ -1,4 +1,5 @@
 import { Swiper } from "swiper/react"; // Importa os componentes principais do Swiper
+// import "./Slider.css";
 
 // Importa os módulos extras do Swiper
 import {
