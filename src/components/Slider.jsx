@@ -1,30 +1,21 @@
-import { Swiper } from "swiper/react"; // Importa os componentes principais do Swiper
+import { Swiper } from "swiper/react";
 // import "./Slider.css";
 
-// Importa os módulos extras do Swiper
 import {
-  Navigation, // Botões de navegação
-  Pagination, // Paginação (bolinhas)
-  Scrollbar, // Barra de rolagem
-  A11y, // Acessibilidade
-  
+  Pagination,
 } from "swiper/modules";
 
-import "swiper/css"; // Importa os estilos básicos do Swiper
-import "swiper/css/navigation"; // Importa o CSS da navegação
-import "./slider.css"; // Importa o CSS personalizado
+import "swiper/css";
+import "./slider.css";
 
-const Slider = ({ settings, children }) => { // Componente Slider
+const Slider = ({ settings, children }) => {
   return (
-   <Swiper
-  modules={[Navigation, Pagination]}
-
-  slidesPerView={4}
-  spaceBetween={20}
-
-  navigation={true}
-  {...settings}
->
+    <Swiper
+      modules={[Pagination]}
+      slidesPerView={4}
+      spaceBetween={20}
+      {...settings}
+    >
       {children}
     </Swiper>
   );

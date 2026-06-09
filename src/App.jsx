@@ -18,18 +18,18 @@ function App() {
   // ADICIONAR / REMOVER
   const toggleCarrinho = (produto) => {
 
-    const produtoNome = produto ? produto.name : "Produto";
+    const produtoNome = produto ? produto.title : "Produto";
     const existe = carrinho.some((item) => item.id === produto.id);
 
     if (existe) {
       toast.info(
         `${produtoNome} removido do carrinho`,
-        { theme: "dark" }
+        { theme: "light" }
       );
     } else {
       toast.success(
         `${produtoNome} adicionado ao carrinho`,
-        { theme: "dark" }
+        { theme: "light" }
       );
     }
 
@@ -51,7 +51,7 @@ function App() {
 
     });
 
-    setActiveTab("pedidos");
+    // setActiveTab("pedidos");
   };
 
   // REMOVER PELO BOTÃO "-"

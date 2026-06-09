@@ -6,6 +6,8 @@
 
     width: 225px;
     padding: 15px;
+    padding-bottom: 55px;
+
     margin: 30px;
 
     text-align: center;
@@ -29,12 +31,17 @@
 }
 
 .Menu-info {
-    margin-top: 10px;
+    margin-top: -35px;
     width: 100%;
 }
 
 .comidas {
-    min-height: 55px;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .comidas h3 {
@@ -46,28 +53,24 @@
 
     color: #4A2E1F;
 
-    margin-top: 10px;
+    margin: 10px 0 0 0;
+
 }
 
-.Menu-info p {
+.preco {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: large;
-
-    color: #4A2E1F;
-
-    margin-top: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #8B5E3C;
+    transform: translateY(30px);
 }
 
 .favorite-btn {
     position: absolute;
 
-    bottom: -18px;
-    left: 50%;
+    bottom: 5px;
 
-    transform: translateX(-50%);
+    transform: translateY(30px);
 
     width: 42px;
     height: 42px;
@@ -84,10 +87,6 @@
     cursor: pointer;
 
     transition: 0.2s;
-}
-
-.favorite-btn:hover {
-    transform: translateX(-50%) scale(1.08);
 }
 
 .favorite-btn.active {

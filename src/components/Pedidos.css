@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
-  font-family: sans-serif; /* Garante que uma fonte bizarra não quebre o tamanho */
+  font-family: sans-serif;
 }
 
 /* TÍTULO */
@@ -23,21 +23,22 @@
   border-radius: 25px;
   padding: 30px;
   position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* CONTAINER PARA OS CARDS NÃO DEIXAR ELES SOBREPOREM O TOTAL */
+/* LISTA DOS CARDS */
 .pedido-lista-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
-  margin-bottom: 60px; /* Abre espaço para o TOTAL não sumir */
+  padding-bottom: 80px;
 }
 
 /* CARD */
 .pedido-card {
-  width: 360px; /* Aumentado levemente para dar mais folga de espaço */
-  height: 110px; /* Fixado de volta, mas controlando o conteúdo interno */
+  width: 360px;
+  height: 110px;
   background: #ebe6df;
   border-radius: 18px;
   display: flex;
@@ -45,51 +46,48 @@
   gap: 15px;
   padding: 10px 15px;
   position: relative;
-  margin-bottom: 20px;
-  box-sizing: border-box; /* Garante que o padding não mude o tamanho do card */
+  box-sizing: border-box;
 }
 
 /* IMAGEM */
 .pedido-img {
-  width: 85px;  /* Reduzido levemente para sobrar mais espaço para o texto */
+  width: 85px;
   height: 85px;
   object-fit: cover;
   border-radius: 15px;
-  flex-shrink: 0; /* Impede a imagem de amassar */
+  flex-shrink: 0;
 }
 
-/* INFO (TEXTOS) */
+/* INFO */
 .pedido-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  flex: 1; /* Ocupa todo o espaço do meio do card */
-  min-width: 0; /* Evita bug de textos longos quebrando o flexbox */
+  flex: 1;
+  min-width: 0;
 }
 
-/* TÍTULO DO DOCE */
+/* TÍTULO */
 .pedido-info h2 {
   margin: 0;
   font-size: 1.1rem;
   color: black;
   font-weight: bold;
-  white-space: nowrap;     /* Força o texto a ficar em uma linha */
-  overflow: hidden;        /* Esconde o que sobrar */
-  text-overflow: ellipsis; /* Adiciona "..." se o nome for gigante */
-  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* PREÇO */
 .pedido-preco {
-  margin: 5px 0 0 0 !important; /* Força margem limpa */
+  margin-top: 5px;
   font-size: 1rem;
   font-weight: bold;
   color: #5a381e;
-  display: block !important;
+  transform: translateY(6px);
 }
 
-/* BOTÃO (-) */
+/* BOTÃO REMOVER */
 .remove-btn {
   position: absolute;
   top: -10px;
