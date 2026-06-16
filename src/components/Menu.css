@@ -2,23 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 25px;
+  margin: 25px 0;
   font-size: x-large;
   font-family: "Gabarito", sans-serif;
   color: #4A2E1F;
 }
-#titulo-menu{
-     /* position: relative; */
-     bottom: 550px;
+
+#titulo-menu {
+  margin: 0;
 }
-.menu-row {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr); 
-  gap: -5px;
-  margin-bottom: 30px;
-}
-.categoria-titulo{
-  position: absolute;
-  left: 20px;
+
+.categoria-titulo {
+  margin: 20px 0 10px 20px;
   font-family: "Gabarito", sans-serif;
   color: #4A2E1F;
   font-size: x-large;

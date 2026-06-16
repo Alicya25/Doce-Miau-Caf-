@@ -2,7 +2,7 @@ import fundo from "../assets/detalhes-logo/cafe-fundo.png";
 import Pata from "../assets/detalhes-logo/pata.png";
 import "./Home.css";
 
-export function Home() {
+export function Home({activeTab, setActiveTab}) {
   return (
     <div className="banner">
       <div className="titulo-principal">
@@ -12,7 +12,7 @@ export function Home() {
          <p className="subtitulo">
           Cafés especiais, doces artesanais e a companhia mais fofa que você vai encontrar. 
         </p>
-        <button className="botao">Ver Menu</button>
+        <button className="botao" onClick={()=>setActiveTab("menu")}>Ver Menu</button>
       </div>
 
       <img className="fundo" src={fundo} alt="café" />

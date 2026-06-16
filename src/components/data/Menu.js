@@ -59,7 +59,7 @@ export const gMenu = [
      //salgados
     { id: 10, title: "Batata Frita", category: "R$14,50", imagem: batataFrita, tipo: "salgado" }, // criar objeto usando chaves{}
     { id: 11, title: "Crepioca de Frango", category: "R$17,99", imagem: crepioca, tipo: "salgado"  },
-    { id: 12, title: "Croissant de Presunto e Queijo", category: "R$15,99", imagem: croissantSalgado, tipo: "salgado"  },
+    { id: 12, title: "Croissant Misto", category: "R$15,99", imagem: croissantSalgado, tipo: "salgado"  },
     { id: 13, title: "Enroladinho de Salsicha", category: "R$13,99", imagem: enroladinhoSalsicha, tipo: "salgado" },
     { id: 14, title: "Frango Frito", category: "R$18,00", imagem: frangoFrito, tipo: "salgado"  },
     { id: 15, title: "Lanche Natural", category: "R$12,89", imagem: lanche, tipo: "salgado"  },
@@ -89,6 +89,6 @@ export const gMenu = [
     { id: 36, title: "Soda Italiana", category: "R$18,99", imagem: Soda, tipo: "bebidaG"  },
     { id: 37, title: "Suco de Laranja", category: "R$7,99", imagem: Laranja, tipo: "bebidaG"  },
     { id: 38, title: "Suco de Maracujá", category: "R$7,99", imagem: Maracuja, tipo: "bebidaG"  },
-    { id: 39, title: "Suco de Laranja com Morango", category: "R$8,98", imagem: LaranjaMorango, tipo: "bebidaG"  },
+    { id: 39, title: "Suco Laranja+Morango", category: "R$8,98", imagem: LaranjaMorango, tipo: "bebidaG"  },
 
 ];

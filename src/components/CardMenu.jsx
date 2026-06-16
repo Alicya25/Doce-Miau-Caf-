@@ -5,9 +5,9 @@ export function CardMenu({
   title,
   category,
   imagem,
-  isCarrinho,
   onCarrinho
 }) {
+
   return (
     <div className="cafe-menu-principal">
 
@@ -16,26 +16,29 @@ export function CardMenu({
         src={imagem}
         alt={title}
       />
-      <p className="preco">{category}</p>
+
+      <p className="preco">
+        {category}
+      </p>
 
       <div className="Menu-info">
+
         <div className="comidas">
-          
+
           <h3>{title}</h3>
-           
-            <button
-          className={`favorite-btn ${isCarrinho ? "active" : ""}`}
-          onClick={onCarrinho}
-        >
-          <Plus
-            size={18}
-            stroke={isCarrinho ? "#7c3aed" : "white"}
-          />
-        </button>
-        
+
+          <button
+            className="favorite-btn"
+            onClick={onCarrinho}
+          >
+            <Plus
+              size={18}
+              stroke="white"
+            />
+          </button>
+
         </div>
 
-      
       </div>
 
     </div>

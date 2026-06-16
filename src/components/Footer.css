@@ -1,0 +1,43 @@
+.footer {
+     
+     height: 220px;
+     background: #8B5A2B;
+     color: #FFFFFF;
+     margin-top: 80px;
+     padding: 35px 80px;
+}
+
+.footer-content {
+     max-width: 1200px;
+     margin: 0 auto;
+
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+     gap: 60px;
+}
+
+.footer-column h3 {
+     font-size: 1.2rem;
+     font-weight: 400;
+     margin-bottom: -60px;
+     padding-bottom: 8px;
+     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+     width: 110px;
+
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.footer-column p {
+     color: rgba(255, 255, 255, 0.703);
+     margin: 8px 0;
+     font-size: 0.95rem;
+     line-height: 1.5;
+
+     font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+}
