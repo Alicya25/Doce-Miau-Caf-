@@ -89,6 +89,6 @@ export const gMenu = [
     { id: 36, title: "Soda Italiana", category: "R$18,99", imagem: Soda, tipo: "bebidaG"  },
     { id: 37, title: "Suco de Laranja", category: "R$7,99", imagem: Laranja, tipo: "bebidaG"  },
     { id: 38, title: "Suco de Maracujá", category: "R$7,99", imagem: Maracuja, tipo: "bebidaG"  },
-    { id: 39, title: "Suco Laranja+Morango", category: "R$8,98", imagem: LaranjaMorango, tipo: "bebidaG"  },
+    { id: 39, title: "Suco OrangeBerry", category: "R$8,98", imagem: LaranjaMorango, tipo: "bebidaG"  },
 
 ];
