@@ -6,7 +6,7 @@ import {
 } from "swiper/modules";
 
 import "swiper/css";
-import "./slider.css";
+import "./Slider.css";
 
 const Slider = ({ settings, children }) => {
   return (

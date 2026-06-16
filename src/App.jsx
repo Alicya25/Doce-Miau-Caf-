@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from "react";
-
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { Gato } from "./components/Gato";
@@ -8,7 +7,7 @@ import { Menu } from "./components/Menu";
 import { Pedidos } from "./components/Pedidos";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "./components/Footer";
+import { Footer } from "./components/Footer";
 
 function App() {
 
