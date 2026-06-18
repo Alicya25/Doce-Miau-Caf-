@@ -1,8 +1,21 @@
 import "./Pedidos.css";
+import { useState, useEffect } from "react";
 import detalhe1 from "../assets/detalhes-logo/8.png";
 import detalhe2 from "../assets/detalhes-logo/7.png";
 
-export function Pedidos({ carrinho, removeCarrinho }) {
+export function Pedidos({
+  carrinho,
+  removeCarrinho,
+  limparCarrinho
+}) {
+
+  const [pedidoEnviado, setPedidoEnviado] = useState(false);
+
+  useEffect(() => {
+    if (carrinho.length > 0) {
+      setPedidoEnviado(false);
+    }
+  }, [carrinho]);
 
   const total = carrinho.reduce((acc, item) => {
 
@@ -16,7 +29,6 @@ export function Pedidos({ carrinho, removeCarrinho }) {
 
   }, 0);
 
-
   return (
 
     <div className="pedido-principal">
@@ -25,12 +37,11 @@ export function Pedidos({ carrinho, removeCarrinho }) {
       <h1 className="pedido-titulo">Acompanhe seu pedido:</h1>
       <img id="pata2" src={detalhe2} alt="café" />
 
-
       <div className="pedido-area">
 
         <div className="pedido-lista-cards">
 
-          {carrinho.map((item) => {
+          {!pedidoEnviado && carrinho.map((item) => {
 
             const valor = Number(
               item.category
@@ -40,7 +51,6 @@ export function Pedidos({ carrinho, removeCarrinho }) {
             );
 
             const subtotal = valor * item.quantidade;
-
 
             return (
 
@@ -52,15 +62,12 @@ export function Pedidos({ carrinho, removeCarrinho }) {
                   className="pedido-img"
                 />
 
-
                 <div className="pedido-info">
 
-                  <h2>
-                    {item.title}
-                  </h2>
-
+                  <h2>{item.title}</h2>
 
                   <div className="pedido-valores-livres">
+
                     <p className="pedido-quantidade">
                       Quantidade: {item.quantidade}
                     </p>
@@ -72,9 +79,10 @@ export function Pedidos({ carrinho, removeCarrinho }) {
                     <p className="pedido-subtotal">
                       Subtotal: R$ {subtotal.toFixed(2).replace(".", ",")}
                     </p>
-                  </div>
-                </div>
 
+                  </div>
+
+                </div>
 
                 <button
                   className="remove-btn"
@@ -91,10 +99,24 @@ export function Pedidos({ carrinho, removeCarrinho }) {
 
         </div>
 
+        {!pedidoEnviado && (
+          <h2 className="pedido-total">
+            TOTAL: R$ {total.toFixed(2).replace(".", ",")}
+          </h2>
+        )}
 
-        <h2 className="pedido-total">
-          TOTAL: R$ {total.toFixed(2).replace(".", ",")}
-        </h2>
+        <button
+          className={`botao-Pedido ${pedidoEnviado ? "enviado" : ""}`}
+          onClick={() => {
+            setPedidoEnviado(true);
+            limparCarrinho();
+          }}
+          disabled={pedidoEnviado}
+        >
+          {pedidoEnviado
+            ? "Pedido enviado!"
+            : "Mandar para a cozinha"}
+        </button>
 
       </div>
 

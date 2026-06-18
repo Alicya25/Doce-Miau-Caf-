@@ -7,7 +7,6 @@
   font-family: sans-serif;
 }
 
-
 .pedido-titulo {
   font-size: 2.5rem;
   color: #4b2e2e;
@@ -20,11 +19,13 @@
   top: 130px;
   font-size: 35px;
 }
-#pata1{
+
+#pata1 {
   width: 300px;
   transform: translateX(-350px);
 }
-#pata2{
+
+#pata2 {
   width: 300px;
   transform: translateX(+350px);
   position: absolute;
@@ -41,7 +42,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-
 .pedido-lista-cards {
   display: flex;
   flex-wrap: wrap;
@@ -50,19 +50,15 @@
   padding-bottom: 80px;
 }
 
-
 .pedido-card {
   width: 380px;
-  height: 130px; 
+  height: 130px;
   background: #ebe6df;
   border-radius: 18px;
-
   display: flex;
   align-items: flex-start;
-
   gap: 15px;
   padding: 15px;
-
   position: relative;
   box-sizing: border-box;
 }
@@ -82,9 +78,7 @@
   flex: 1;
   min-width: 0;
   padding-right: 35px;
-
 }
-
 
 .pedido-info h2 {
   margin: 0;
@@ -95,19 +89,16 @@
   color: #4A2E1F;
 }
 
-
 .pedido-valores-livres {
-  position: absolute;   
-  left: 125px;          
-  
-  
-  transform: translateY(-69px); 
+  position: absolute;
+  left: 125px;
+  transform: translateY(-69px);
 }
 
 .pedido-preco,
 .pedido-quantidade,
 .pedido-subtotal {
-  margin: 2px 0; 
+  margin: 2px 0;
   font-size: 1rem;
   color: #5a381e;
   font-weight: 500;
@@ -136,7 +127,6 @@
   justify-content: center;
 }
 
-
 .pedido-total {
   position: absolute;
   bottom: 20px;
@@ -145,4 +135,32 @@
   font-weight: bold;
   color: #4A2E1F;
   margin: 0;
+}
+
+.botao-Pedido {
+  position: absolute;
+  top: 385px;
+  left: 910px;
+  margin-top: 30px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 20px;
+  background-color: #7B4F2C;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* ESTADO APÓS ENVIAR O PEDIDO */
+.botao-Pedido.enviado {
+  background: transparent;
+  border: 2px solid #7B4F2C;
+  color: #7B4F2C;
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
 }

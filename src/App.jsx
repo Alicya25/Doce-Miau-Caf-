@@ -7,7 +7,7 @@ import { Menu } from "./components/Menu";
 import { Pedidos } from "./components/Pedidos";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer  from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -53,7 +53,6 @@ function App() {
 
   };
 
-
   // REMOVER PRODUTO DO PEDIDO
   const removeCarrinho = (id) => {
 
@@ -63,6 +62,10 @@ function App() {
 
   };
 
+  // LIMPAR CARRINHO APÓS ENVIAR PEDIDO
+  const limparCarrinho = () => {
+    setCarrinho([]);
+  };
 
   function renderContent() {
 
@@ -75,7 +78,6 @@ function App() {
       );
     }
 
-
     if (activeTab === "menu") {
       return (
         <Menu
@@ -84,22 +86,20 @@ function App() {
       );
     }
 
-
     if (activeTab === "gatos") {
       return <Gato />;
     }
-
 
     if (activeTab === "pedidos") {
       return (
         <Pedidos
           carrinho={carrinho}
           removeCarrinho={removeCarrinho}
+          limparCarrinho={limparCarrinho}
         />
       );
     }
   }
-
 
   return (
 
@@ -114,16 +114,13 @@ function App() {
 
       </div>
 
-
       <div className="banner-principal">
 
         {renderContent()}
 
       </div>
 
-
-      <Footer/>
-
+      <Footer />
 
       <ToastContainer
         position="top-right"
